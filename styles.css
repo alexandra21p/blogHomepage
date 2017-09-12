@@ -137,11 +137,11 @@ section {
   margin-bottom: 50px;
 }
 
-.post-item > img {
+article > img {
   display: block;
 }
 
-.post-item img, .caption-part {
+article img, .caption-part {
   height: 50%;
   width: 100%;
   background-color: white;
@@ -162,7 +162,7 @@ h5 {
   font-style: italic;
 }
 
-.caption-part span {
+span {
   display: inline-block;
   color: #BDBDBD;
   font-size: 12px;
@@ -210,7 +210,7 @@ h6 {
 /*.post-stats:first-of-type {
   margin-left: 30px;
 }*/
-.post-stats img {
+.post-stats img, .latest-post-item .post-stats img {
   width: 15px;
   height: 15px;
   margin-right: 5px;
@@ -289,7 +289,7 @@ h6 {
   text-align: left;
 }
 
-.bottom-item img {
+.bottom-item img.circled-image {
   width: 110px;
   height: 110px;
   border-radius: 50%;
@@ -297,18 +297,23 @@ h6 {
   margin: 30px 10px;
 }
 
+.bottom-item .title {
+  position: relative;
+  margin-top: 10px;
+}
+
 .bottom-item .title h3::before {
   content: url("assets/leaf-left.png");
-  position: relative;
-  top: 8px;
-  left: -5px;
+  position: absolute;
+  left: 10px;
+  top: -4px;
 }
 
 .bottom-item .title h3::after {
   content: url("assets/leaf-right.png");
-  position: relative;
-  top: 5px;
-  right: -5px;
+  position: absolute;
+  right: 10px;
+  top: -5px;
 }
 
 .bottom-item p {
@@ -323,6 +328,41 @@ h6 {
   width: 120px;
 }
 
+.bottom-item img {
+  width: 250px;
+  margin-top: 40px;
+}
+
+.latest-post-item {
+  height: 70px;
+  margin-top: 40px;
+}
+
+.latest-post-item img {
+  width: 70px;
+  height: 60px;
+  margin: 0;
+  float: left;
+}
+
+.latest-post-item > * {
+  display: inline-block;
+}
+
+.latest-post-info {
+  margin: 5px 0;
+  width: 140px;
+  text-align: left;
+}
+
+.latest-post-info ~ .post-stats {
+  float: right;
+  width: 55px;
+}
+
+.latest-post-info span {
+  padding: 10px 0 0 0;
+}
 .newsletter {
   margin-top: 100px;
 }
