@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  font-size: 13px;
+}
+
+p {
+   line-height: 25px;
+   text-align: left;
+ }
+
+/* /////////////// HEADER ///////////////// */
+
+/* topbar with social media icons */
+
+.topbar-container {
+  height: 40px;
+  font-weight: 100;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  background-color: #000000;
+  color: #EEEEEE;
+  text-transform: uppercase;
+}
+
+.topbar {
+  height: inherit;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.topbar-menu, .topbar-logo {
+  height: inherit;
+  display: inline-block;
+}
+
+.topbar-logo img {
+  width: 18px;
+  height: 18px;
+  margin: 10px 3px 0 0;
+}
+
+.topbar-logo > span {
+  display: inline-block;
+  overflow: auto;
+  vertical-align:top;
+  margin: 13px 0;
+}
+
+ul.topbar-menu {
+  width: auto;
+  float: right;
+  color: #EEEEEE;
+  list-style-type: none;
+}
+
+.topbar-menu li {
+  height: inherit;
+  display: inline-block;
+  padding: 15px 5px;
+}
+
+.topbar-menu a {
+  display: flex;
+}
+
+.topbar-menu span {
+  padding: 1px 0 0 5px;
+  display: inline-block;
+}
+
+
+
+/* main logo part */
+.logo {
+  background-color: #fff;
+  height: 170px;
+  border-bottom: 1px solid #E0E0E0;
+  text-align: center;
+}
+
+.logo a > img {
+  height: 100px;
+  width: 190px;
+  /*margin: 35px 120px 35px 0;*/
+  margin: 35px auto;
+}
+
+/* main menu */
+.menu {
+  height: 80px;
+  background-color: #fff;
+}
+
+.menu ul {
+  list-style-type: none;
+  color: black;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 50px;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+.menu ul li a:active {
+  color: #628155;
+}
+
+a > img {
+  width: 15px;
+  height: 15px;
+}
+
+/* /////////////// main container with the posts /////////////// */
+section {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px 0 100px 370px;
+}
+
+.post, .ads, .change-page {
+  margin-bottom: 50px;
+}
+
+.post-item > img {
+  display: block;
+}
+
+.post-item img, .caption-part {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.caption-part img {
+  width: 100px;
+  height: 40px;
+}
+/*.caption-part > * {
+  padding-top: 20px;
+}*/
+
+h5 {
+  padding: 20px 0;
+  color: #628155;
+  font-style: italic;
+}
+
+.caption-part span {
+  display: inline-block;
+  color: #BDBDBD;
+  font-size: 12px;
+  padding: 10px;
+}
+
+img.tiny-symbol {
+  width: 8px;
+  height: 8px;
+}
+
+.caption-part p {
+  margin: 20px 45px;
+}
+
+button {
+  width: 26%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background-color: #628155;
+  color: whitesmoke;
+  padding: 13px 5px;
+  border: none;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.bottom-actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 35px;
+  color: #BDBDBD;
+}
+
+.post-stats {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+/*.post-stats:first-of-type {
+  margin-left: 30px;
+}*/
+.post-stats img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  opacity: 0.5;
+}
+
+.comms {
+  margin-left: auto;
+  /*margin-right: 30px;*/
+}
+
+.related-posts {
+  text-align: center;
+  margin: 45px 0;
+}
+
+.related-posts img {
+  margin-top: 20px;
+  float: left;
+  width: 30%;
+  height: 120px;
+}
+
+.related-posts img:not(:last-child) {
+  margin-right: 28px;
+}
+
+.change-page {
+  margin-right: 0;
+}
+
+.ads {
+  text-align: center;
+  background-color: black;
+  height: 80px;
+}
+
+.ads h1 {
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 0;
+}
+
+/* ////// BOTTOM POSTS AND NEWSLETTER ////// */
+
+.bottom-container {
+  width: 1170px;
+  margin: 0 auto 100px;
+}
+/*footer {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}*/
+
+.bottom-posts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-item {
+  padding: 20px 30px 50px;
+  width: 30%;
+  background-color: white;
+  border: 2px solid #EEEEEE;
+  box-shadow: 2px 4px 5px #EEEEEE;
+  text-align: center;
+}
+
+.bottom-item h2 {
+  display: inline-block;
+  width: 100px;
+  margin-top: 60px;
+  text-align: left;
+}
+
+.bottom-item img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  float: left;
+  margin: 30px 10px;
+}
+
+.bottom-item .title h3::before {
+  content: url("assets/leaf-left.png");
+  position: relative;
+  top: 8px;
+  left: -5px;
+}
+
+.bottom-item .title h3::after {
+  content: url("assets/leaf-right.png");
+  position: relative;
+  top: 5px;
+  right: -5px;
+}
+
+.bottom-item p {
+  margin-bottom: 20px;
+}
+
+.clearfix {
+  clear: both;
+}
+.bottom-item button {
+  float:left;
+  width: 120px;
+}
+
+.newsletter {
+  margin-top: 100px;
+}
+
+.subscribe-info, .subscribe-input {
+  display: inline-block;
+  width: 50%;
+}
+
+.subscribe-info p {
+  margin-top: 20px;
+}
+
+.subscribe-input {
+  float: right;
+  margin-top: 35px;
+}
+
+input {
+  width: 300px;
+  height: 35px;
+  margin: 2px 0 0 130px;
+  background: url("assets/contact.png") no-repeat scroll 13px 8px;
+  padding-left: 38px;
+  border: 2px solid #EEEEEE;
+  background-color: white;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+.subscribe-input > button {
+  float: right;
+}
