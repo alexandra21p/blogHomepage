@@ -943,6 +943,8 @@ ul.bottom-links {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: lighter;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-info-item > img {
