@@ -1434,10 +1434,6 @@ header.contact-page-header span {
   letter-spacing: 1px;
 }
 
-.top-container > * {
-  align-self: stretch;
-}
-
 .top-container a.contact-header-middle {
   display: block;
   padding: 0 100px;
